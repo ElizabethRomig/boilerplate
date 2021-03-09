@@ -86,13 +86,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
 header,
 footer {
+  background-color: #202322;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -100,6 +109,22 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  width: 80%;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  color: #e2e3ed;
+}
+
+header .header-divider {
+  margin: 16px 0;
+  width: 96%;
+  border-bottom: 1px solid #e2e3ed;
 }
 
 header nav {
@@ -107,12 +132,36 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0 35px;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 0 30px;
+  width: 50%;
+  color: #e2e3ed;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin-bottom: 12px;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .social-icons {
@@ -127,10 +176,22 @@ footer .social p {
   align-items: center;
 }
 
+footer p {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 18px;
+}
+
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  height: 500px;
+  color: #e2e3ed;
 }
 
 aside {
@@ -138,12 +199,54 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+aside h3 {
+  margin: 0;
+}
+
+aside .form input {
+  width: 98%;
+  margin: 16px 0;
+  height: 50px;
+}
+
+input[placeholder] {
+  font-style: italic;
+  padding-left: 15px;
+}
+
+aside input[type="button"] {
+  background-color: #2a423a;
+  color: #e2e3ed;
+  text-transform: uppercase;
 }
 
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+}
+
+.features p {
+  margin: 0;
+}
+
+.features h2 {
+  margin-bottom: 0;
+}
+
+.features article {
+  width: 60%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.features .fontawesome-icon {
+  margin-bottom: 40px;
 }
 
 .features .features-items {
@@ -151,6 +254,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .reviews {
@@ -158,9 +262,30 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
-.example-review {
+.reviews img {
+  width: 100%;
+  height: auto;
+}
+
+.reviews h3 {
+  width: 60%;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+.contact-footer,
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,20 +293,31 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
+  color: #e2e3ed;
+  padding: 45px 0;
+}
+
+.contact-section h2,
+.contact-section h4,
+.contact-section address p {
+  margin: 0 0 15px 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
 }
 
-faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-faq content-wrapper {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
