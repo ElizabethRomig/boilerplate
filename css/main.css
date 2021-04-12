@@ -107,6 +107,14 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /*background-color and color omit? */
 
 header,
@@ -131,13 +139,13 @@ header .content-wrapper {
   margin: 0;
 }
 
-/* header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  color: #e2e3ed;
-} */
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .header-divider {
   margin: 10px 0 20px 0;
@@ -202,7 +210,8 @@ footer .copyright {
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
+  background-size: cover;
   height: 500px;
   color: #e2e3ed;
 }
@@ -248,13 +257,14 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
-/*omit align, height, background image, color?*/
+/*omit align, height, color?*/
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
-  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
+  background-size: cover;
   color: #e2e3ed;
 }
 
@@ -289,10 +299,8 @@ input[type="button"] {
   color: #e2e3ed;
 }
 
-/*omit?*/
-.reviews img {
-  width: 100%;
-  height: auto;
+.reviews figure {
+  width: auto;
 }
 
 .reviews h2 {
@@ -478,7 +486,7 @@ address {
   }
 
   /*omit?*/
-  header img {
+  header figure {
     width: 30%;
   }
 
@@ -543,10 +551,6 @@ address {
     justify-content: space-between;
   }
 
-  .reviews article div {
-    width: 49%;
-  }
-
   /*omit both reviews?*/
   .reviews article .example-review {
     display: flex;
@@ -554,8 +558,7 @@ address {
     flex-flow: row nowrap;
   }
 
-  .reviews img {
-    width: 40%;
+  .reviews figure {
     padding-right: 15px;
   }
 
@@ -641,10 +644,6 @@ address {
 
   .features article {
     flex-basis: 33%;
-  }
-
-  .reviews article div {
-    width: 42%;
   }
 
   .mission h2,
