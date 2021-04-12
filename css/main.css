@@ -17,16 +17,6 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -37,10 +27,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -49,12 +35,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -65,19 +45,11 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
   resize: vertical;
@@ -86,9 +58,56 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General Styles */
+
+html {
+  font-size: 16px;
+  width: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  text-align: left;
 }
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/*background-color and color omit? */
 
 header,
 footer {
@@ -120,7 +139,7 @@ header .content-wrapper {
   color: #e2e3ed;
 } */
 
-header .header-divider {
+.header-divider {
   margin: 10px 0 20px 0;
   width: 100%;
   height: 1px;
@@ -138,29 +157,22 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
   width: 100%;
-  padding: 0;
-  margin: 0 35px;
-  list-style: none;
 }
 
+/*omit a altogether*/
 header nav ul li a {
   padding: 0 30px;
-  width: 50%;
-  color: #e2e3ed;
   font-weight: bold;
-  text-decoration: none;
   text-transform: uppercase;
-}
-
-footer .copyright {
-  margin-bottom: 12px;
 }
 
 footer {
   flex-direction: column;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer .content-wrapper {
@@ -180,28 +192,22 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer p {
-  margin: 0;
+footer .copyright {
+  margin: 20px 0;
 }
 
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-
-/* .content-wrapper {
-  width: 90%;
-  margin: 0 18px;
-} */
-
+/*omit align, height, background image, color?*/
 .hero-area {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
   align-items: center;
   background-image: url("../img/jake-melara-30679-unsplash.jpg");
   height: 500px;
   color: #e2e3ed;
 }
+
+/*omit colors?*/
 
 aside {
   display: flex;
@@ -211,7 +217,7 @@ aside {
   background-color: #527158;
   color: #e2e3ed;
 }
-
+/*omit following aside additionals*/
 aside h3 {
   margin: 0;
 }
@@ -233,16 +239,14 @@ aside input[type="button"] {
   text-transform: uppercase;
 }
 
+/*omit align, height, background image, color?*/
 .features {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
   align-items: center;
   background-image: url("../img/rawpixel-800820-unsplash1.jpg");
   color: #e2e3ed;
-}
-
-.features p {
-  margin: 0;
 }
 
 .features h2 {
@@ -252,21 +256,21 @@ aside input[type="button"] {
 .features article {
   width: 60%;
   text-align: center;
-  margin-top: 60px;
+  margin: 30px 0;
 }
 
-.features .fontawesome-icon {
+/* .features .fontawesome-icon {
   margin-bottom: 40px;
-}
+} */
 
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
+/*omit align & colors?*/
 .reviews {
   display: flex;
   justify-content: center;
@@ -276,15 +280,22 @@ aside input[type="button"] {
   color: #e2e3ed;
 }
 
+/*omit?*/
 .reviews img {
   width: 100%;
   height: auto;
 }
 
-.reviews h3 {
-  width: 60%;
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/*omit colors?*/
 .mission {
   display: flex;
   justify-content: center;
@@ -294,6 +305,7 @@ aside input[type="button"] {
   color: #e2e3ed;
 }
 
+/*omit?*/
 .contact-footer,
 .contact {
   display: flex;
@@ -306,6 +318,7 @@ aside input[type="button"] {
   margin: 0;
 }
 
+/*omit colors, padding?*/
 .contact-section {
   background-color: #2a423a;
   color: #e2e3ed;
@@ -316,16 +329,12 @@ aside input[type="button"] {
   flex-flow: row wrap;
 }
 
-.contact-section h2,
-.contact-section h4,
-.contact-section address p {
-  margin: 0 0 15px 0;
-}
-
+/*omit?*/
 address {
   font-style: normal;
 }
 
+/*colors?*/
 .faq {
   display: flex;
   justify-content: center;
@@ -452,12 +461,14 @@ address {
     padding: 33px 0;
   }
 
+  /*flex-flow?*/
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
     flex-flow: row nowrap;
   }
 
+  /*omit?*/
   header img {
     width: 30%;
   }
@@ -487,6 +498,7 @@ address {
     margin: 0;
   }
 
+  /*omit through aside?*/
   .hero-area h1 {
     width: 550px;
     font-size: 3em;
@@ -522,6 +534,11 @@ address {
     justify-content: space-between;
   }
 
+  .reviews article div {
+    width: 49%;
+  }
+
+  /*omit both reviews?*/
   .reviews article .example-review {
     display: flex;
     align-items: center;
@@ -588,6 +605,10 @@ address {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here */
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -606,7 +627,7 @@ address {
   }
 
   .features h2 {
-    width: 88%;
+    width: 90%;
   }
 
   .features article {
@@ -614,12 +635,12 @@ address {
   }
 
   .reviews article div {
-    width: 96%;
+    width: 42%;
   }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-    width: 88%;
+    width: 95%;
   }
 
   .faq h2 {
