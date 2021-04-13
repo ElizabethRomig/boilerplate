@@ -185,8 +185,21 @@ footer p {
 }
 
 footer .content-wrapper {
-  width: 55%;
   margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contact {
+  width: 55%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+footer .social {
+  text-align: center;
+  width: 100%;
 }
 
 footer .social-icons {
@@ -196,6 +209,19 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons i {
+  color: #e2e3ed;
+  padding: 10px;
+  font-size: 2.5em;
+  background-color: #527158;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -581,18 +607,8 @@ address {
     margin: 100px 0;
   }
 
-  .contact-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   footer .contact {
-    margin-bottom: 0;
-  }
-
-  footer .copyright {
-    width: 100%;
+    width: 45%;
   }
 
   .mission-content {
