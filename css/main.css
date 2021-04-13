@@ -115,8 +115,6 @@ figure {
   margin: 0;
 }
 
-/*background-color and color omit? */
-
 header,
 footer {
   background-color: #202322;
@@ -169,7 +167,6 @@ header nav ul {
   padding: 0;
 }
 
-/*omit a altogether*/
 header nav ul li a {
   padding: 0 30px;
   font-weight: bold;
@@ -192,9 +189,9 @@ footer .content-wrapper {
 }
 
 footer .contact {
-  width: 55%;
   text-align: center;
   padding-bottom: 25px;
+  display: block;
 }
 
 footer .social {
@@ -231,19 +228,15 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/*omit align, height, background image, color?*/
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  align-items: center;
   background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
   background-size: cover;
   height: 500px;
   color: #e2e3ed;
 }
-
-/*omit colors?*/
 
 aside {
   display: flex;
@@ -252,10 +245,6 @@ aside {
   flex-flow: row wrap;
   background-color: #527158;
   color: #e2e3ed;
-}
-/*omit following aside additionals*/
-aside h3 {
-  margin: 0;
 }
 
 aside .form {
@@ -284,12 +273,10 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
-/*omit align, height, color?*/
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  align-items: center;
   background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
   background-size: cover;
   color: #e2e3ed;
@@ -317,11 +304,9 @@ input[type="button"] {
   flex-flow: row wrap;
 }
 
-/*omit align & colors?*/
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   background-color: #2a423a;
   color: #e2e3ed;
@@ -340,7 +325,6 @@ input[type="button"] {
   margin: 20px 0;
 }
 
-/*omit colors?*/
 .mission {
   display: flex;
   justify-content: center;
@@ -366,36 +350,19 @@ input[type="button"] {
   left: 0;
 }
 
-/*omit?*/
-.contact-footer,
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .contact p {
   margin: 0;
 }
 
-/*omit colors, padding?*/
 .contact-section {
   background-color: #2a423a;
   color: #e2e3ed;
-  padding: 45px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-/*omit?*/
-address {
-  font-style: normal;
-}
-
-/*colors?*/
 .faq {
   display: flex;
   justify-content: center;
@@ -522,14 +489,12 @@ address {
     padding: 33px 0;
   }
 
-  /*flex-flow?*/
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
     flex-flow: row nowrap;
   }
 
-  /*omit?*/
   header figure {
     width: 30%;
   }
@@ -555,7 +520,6 @@ address {
     margin: 0;
   }
 
-  /*omit through aside?*/
   .hero-area h1 {
     width: 550px;
     font-size: 3em;
@@ -591,7 +555,6 @@ address {
     justify-content: space-between;
   }
 
-  /*omit both reviews?*/
   .reviews article .example-review {
     display: flex;
     align-items: center;
@@ -605,10 +568,6 @@ address {
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
-  }
-
-  footer .contact {
-    width: 45%;
   }
 
   .mission-content {
